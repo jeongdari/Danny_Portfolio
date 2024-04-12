@@ -289,16 +289,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+  transform: rotate(180deg);  
 }
 @keyframes updown {
     0% {
-        transform: translateY(-20px);
+        transform: translateY(-20px) rotate(180deg);
     }
     50% {
-        transform: translateY(20px);
+        transform: translateY(20px) rotate(180deg);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-20px) rotate(180deg);
     }
 }
 .txt-rotate > .wrap {
