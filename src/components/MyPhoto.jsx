@@ -1,7 +1,5 @@
-// MyPhoto.js
-
 import React, { useState, useEffect } from 'react';
-import '../App.css'; // Import CSS file for styles
+import '../App.css';
 
 const MyPhoto = () => {
   const [photos, setPhotos] = useState([]);
@@ -29,17 +27,12 @@ const MyPhoto = () => {
       <h2>My Flickr Gallery</h2>
       <div className="photo-grid">
         {photos.map((photo) => (
-          <div key={photo.id} className="photo-item">
-            <img
-              src={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`}
-              alt={photo.title}
-            />
-            <div className="photo-tooltip">
-              <p>Title: {photo.title}</p>
-              <p>Owner: {photo.ownername}</p>
-              <p>Views: {photo.views}</p>
-            </div>
-          </div>
+          <img
+            key={photo.id}
+            className="photo-item"
+            src={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`}
+            alt={photo.title}
+          />
         ))}
       </div>
     </div>
@@ -47,4 +40,3 @@ const MyPhoto = () => {
 };
 
 export default MyPhoto;
-

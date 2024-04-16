@@ -664,22 +664,3 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
-
-/* Tooltip */
-.photo-tooltip {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.photo-item:hover .photo-tooltip {
-  opacity: 1;
-  visibility: visible;
-}
