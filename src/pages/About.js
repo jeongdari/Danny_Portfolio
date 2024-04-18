@@ -1,11 +1,16 @@
 import React from 'react';
+import Skills from '../components/Skills';
+import MyMap from '../components/MyMap';
+import MyPhoto from '../components/MyPhoto';
+import MyReviews from '../components/Review';
 
-
-function About() {  
+function About() {
   return (
     <div>
-      <h2>About Me</h2>
-      <p>I am ~~~~~.</p>     
+      <Skills />
+      <MyReviews />
+      <MyMap />
+      <MyPhoto />
     </div>
   );
 }

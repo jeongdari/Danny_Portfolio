@@ -1,49 +1,11 @@
-import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImg from '../assets/image/header-img.svg';
+import headerImg from '../assets/image/header-img.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { isVisible } from '@testing-library/user-event/dist/utils';
+import { TypeAnimation } from 'react-type-animation';
 
 function Banner () {
-    const [loopNum, setLoopNum] = useState(0);
-    const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ "Sales Professional", "Master Student", "Careger Changer"];
-    const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const period = 2000;
-
-    useEffect(() => {
-        let ticker = setInterval(() => {
-            tick();
-        }, delta)
-
-        return () => { clearInterval(ticker)};
-    }, [text])
-
-    const tick = () => {
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-    
-        setText(updatedText);
-    
-        if (isDeleting) {
-            setDelta(prevDelta => prevDelta / 2);
-        }
-    
-        if (!isDeleting && updatedText === fullText) {
-            setIsDeleting(true);
-            setDelta(period);
-        } else if (isDeleting && updatedText === '') {
-            setIsDeleting(false);
-            setLoopNum(prevLoopNum => prevLoopNum + 1); // Use the setter function to update loopNum
-            setDelta(500);
-        }
-    };
-    
-
     return (
         <section className="banner" id="home">
             <Container>
@@ -53,7 +15,25 @@ function Banner () {
                         {({ isVisible }) => 
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                         <span className="tagline">Welcome to Danny's Portfolio</span>
-                        <h1>{`Hi I'm Danny Jeong `}<span className="wrap">{text}</span></h1>
+                        <h1 className='text-white mb-4 text-4xl lg:text-6xl font-extrabold'>
+                        <span className='text-transparent bg-clip-text bg-gradient-to-r from purple-400 to-pink-600'> Hello, I am{""} </span>
+                        <br></br>
+                        <TypeAnimation
+                            sequence={[
+                                'Danny Jeong',
+                                1000,
+                                'Sales Professional',
+                                1000,
+                                'IT Student',
+                                1000,
+                                'Career Changer',
+                                1000
+                            ]}
+                            wrapper='span'
+                            speed={50}
+                            repeat={Infinity}
+                        />
+                    </h1>
                         <p>As a technical sales manager and market analyst with more than 16 years of experience, I have honed my skills in strategic planning, data analysis, and market research, which have been instrumental in driving profitability and growth for my clients and employers. However, I have decided to change my career path and pursue a new direction in IT, specifically in the field of Computer Science.</p>
                         <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size = {25} /></button>
                         </div>}

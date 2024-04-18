@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function Resume() {
-  const [resumeData, setResumeData] = useState(null);
+  /* const [resumeData, setResumeData] = useState(null);
 
   useEffect(() => {
     // Function to fetch resume data from LinkedIn API
@@ -30,21 +30,10 @@ function Resume() {
 
     // Call fetchResumeData function
     fetchResumeData();
-  }, []); // Run effect only once on component mount
+  }, []); // Run effect only once on component mount */
 
   return (
-    <div>
-      <h2>Resume</h2>
-      {resumeData ? (
-        <div>
-          {/* Display resume data here */}
-          <p>{resumeData.firstName} {resumeData.lastName}</p>
-          {/* Add more resume details as needed */}
-        </div>
-      ) : (
-        <p>Loading resume...</p>
-      )}
-    </div>
+    <h1>Resume</h1>
   );
 }
 

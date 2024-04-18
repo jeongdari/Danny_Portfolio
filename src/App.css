@@ -100,7 +100,7 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+    width: 14%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -238,9 +238,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Banner CSS */
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;    
-  /* background-image: url('./assets/image/banner-bg.png'); */
-  background-image: url('./assets/image/banner-bg.jpg');
+  padding: 150px 0 200px 0;    
+  background-image: url('./assets/image/banner-bg.png');
+  /* background-image: url('./assets/image/banner-bg.jpg'); */
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -290,17 +290,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
-  transform: rotate(180deg);  
+  transform: rotate(180deg);
 }
 @keyframes updown {
     0% {
-        transform: translateY(-20px) rotate(180deg);
+        transform: translateY(-20px);
     }
     50% {
-        transform: translateY(20px) rotate(180deg);
+        transform: translateY(20px);
     }
     100% {
-        transform: translateY(-20px) rotate(180deg);
+        transform: translateY(-20px);
     }
 }
 .txt-rotate > .wrap {
