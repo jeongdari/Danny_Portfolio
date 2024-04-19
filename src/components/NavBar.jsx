@@ -46,8 +46,8 @@ function NavBar() {
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/home" className={location.pathname === '/home' ? 'active navbar-link' : 'navbar-link'}>Home</Nav.Link>
             <Nav.Link as={Link} to="/about" className={location.pathname === '/about' ? 'active navbar-link' : 'navbar-link'}>About</Nav.Link>
-            <Nav.Link as={Link} to="/portfolio" className={location.pathname === '/portfolio' ? 'active navbar-link' : 'navbar-link'}>Portfolio</Nav.Link>
             <Nav.Link as={Link} to="/resume" className={location.pathname === '/resume' ? 'active navbar-link' : 'navbar-link'}>Resume</Nav.Link>
+            <Nav.Link as={Link} to="/portfolio" className={location.pathname === '/portfolio' ? 'active navbar-link' : 'navbar-link'}>Portfolio</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className='social-icon'>

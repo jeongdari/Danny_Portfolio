@@ -3,14 +3,11 @@ import meter2 from "../assets/image/meter2.svg";
 import meter3 from "../assets/image/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/image/arrow1.svg";
-import arrow2 from "../assets/image/arrow2.svg";
 import colorSharp from "../assets/image/color-sharp.png"
 
 function Skills () {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -52,6 +49,10 @@ function Skills () {
                             <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>Communication</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image" />
+                                <h5>C#, JavaScript, Python</h5>
                             </div>
                         </Carousel>
                     </div>
