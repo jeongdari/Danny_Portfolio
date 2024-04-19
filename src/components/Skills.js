@@ -35,23 +35,23 @@ function Skills () {
                         <p> I have honed my skills in strategic planning, data analysis, and market research, <br></br>which have been instrumental in driving profitability and growth for my clients and employers.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="95%" />
                                 <h5>Strategic planning</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="80%" />
                                 <h5>Data Analysis</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter3} alt="90%" />
                                 <h5>Market Research</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="95%" />
                                 <h5>Communication</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="80%" />
                                 <h5>C#, JavaScript, Python</h5>
                             </div>
                         </Carousel>
@@ -59,7 +59,7 @@ function Skills () {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="SkillBG" />
     </section>
   )
 }

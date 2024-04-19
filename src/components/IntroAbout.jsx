@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { TypeAnimation } from 'react-type-animation';
