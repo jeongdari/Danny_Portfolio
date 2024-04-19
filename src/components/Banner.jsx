@@ -14,7 +14,7 @@ function Banner () {
                         <TrackVisibility>
                         {({ isVisible }) => 
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                        <span className="tagline">Welcome to Danny's Portfolio</span>
+                        <span className="tagline">Welcome to my Portfolio</span>
                         <h1 className='text-white mb-4 text-4xl lg:text-6xl font-extrabold'>
                         <span className='text-transparent bg-clip-text bg-gradient-to-r from purple-400 to-pink-600'> Hello, I am{""} </span>
                         <br></br>
@@ -22,11 +22,11 @@ function Banner () {
                             sequence={[
                                 'Danny Jeong',
                                 1000,
-                                'Sales Professional',
+                                'a Sales Professional',
                                 1000,
-                                'IT Student',
+                                'an IT Student',
                                 1000,
-                                'Career Changer',
+                                'a Career Changer',
                                 1000
                             ]}
                             wrapper='span'
@@ -35,7 +35,7 @@ function Banner () {
                         />
                     </h1>
                         <p>As a technical sales manager and market analyst with more than 16 years of experience, I have honed my skills in strategic planning, data analysis, and market research, which have been instrumental in driving profitability and growth for my clients and employers. However, I have decided to change my career path and pursue a new direction in IT, specifically in the field of Computer Science.</p>
-                        <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size = {25} /></button>
+                        <button onClick={() => console.log('connect')}>See my resume <ArrowRightCircle size = {25} /></button>
                         </div>}
                         </TrackVisibility>
                     </Col>

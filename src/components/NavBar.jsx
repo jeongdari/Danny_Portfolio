@@ -1,13 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Link, useLocation } from 'react-router-dom'; // Import Link and useLocation
 import logo from '../assets/image/logo2.png';
 import navIcon1 from '../assets/image/nav-icon1.svg';
 import navIcon2 from '../assets/image/nav-icon2.svg';
 import navIcon3 from '../assets/image/nav-icon3.svg';
 
 function NavBar() {
-  const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation(); // Get current location
+  const [emailSubject, setEmailSubject] = useState(''); // State to store email subject
+
+  // Function to handle "Let's Connect" button click
+  const handleConnectClick = () => {
+    const emailAddress = 'dannyjeong.au@gmail.com'; 
+    const subject = encodeURIComponent(emailSubject);
+    const mailtoLink = `mailto:${emailAddress}?subject=${subject}`;
+    window.location.href = mailtoLink;
+  }
 
   useEffect(() => {
     const onScroll = () => {
@@ -23,14 +33,10 @@ function NavBar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  };
-
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={Link} to="/home">
           <img src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -38,18 +44,18 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="#about" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>About</Nav.Link>
-            <Nav.Link href="#portfolio" className={activeLink === 'portfolio' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('portfolio')}>Portfolio</Nav.Link>
-            <Nav.Link href="#resume" className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('resume')}>Resume</Nav.Link>
+            <Nav.Link as={Link} to="/home" className={location.pathname === '/home' ? 'active navbar-link' : 'navbar-link'}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/about" className={location.pathname === '/about' ? 'active navbar-link' : 'navbar-link'}>About</Nav.Link>
+            <Nav.Link as={Link} to="/portfolio" className={location.pathname === '/portfolio' ? 'active navbar-link' : 'navbar-link'}>Portfolio</Nav.Link>
+            <Nav.Link as={Link} to="/resume" className={location.pathname === '/resume' ? 'active navbar-link' : 'navbar-link'}>Resume</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className='social-icon'>
-              <a href="a"><img src={navIcon1} alt=""/> </a>
-              <a href="a"><img src={navIcon2} alt=""/> </a>
-              <a href="a"><img src={navIcon3} alt=""/> </a>
+              <a href="https://www.linkedin.com/in/danny-jeong-brisbane/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn"/> </a>
+              <a href="https://www.facebook.com/jeongdari" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="Facebook"/> </a>
+              <a href="https://www.instagram.com/orang_dari_korea/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Inatagram"/> </a>
             </div>
-            <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+            <button className='vvd' onClick={handleConnectClick}><span>Let's Connect</span></button>
           </span>
         </Navbar.Collapse>
       </Container>

@@ -14,10 +14,10 @@ function Footer() {
             <img src={logo} alt="Logo" />
           </Col>
           <Col sm={6} className="text-center text-sm-end">
-            <div className='social-icon'>
-              <a href=''><img src={navIcon1} /></a>
-              <a href=''><img src={navIcon2} /></a>
-              <a href=''><img src={navIcon3} /></a>
+          <div className='social-icon'>
+              <a href="https://www.linkedin.com/in/danny-jeong-brisbane/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn"/> </a>
+              <a href="https://www.facebook.com/jeongdari" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="Facebook"/> </a>
+              <a href="https://www.instagram.com/orang_dari_korea/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Inatagram"/> </a>
             </div>
           </Col>
         </Row>

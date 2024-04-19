@@ -5,6 +5,7 @@ import projImg1 from '../assets/image/project-img1.png';
 import projImg2 from '../assets/image/project-img2.jpeg';
 import projImg3 from '../assets/image/project-img3.png';
 import projImg4 from '../assets/image/project-img4.png';
+import projImg5 from '../assets/image/project-img5.png';
 import colorSharp2 from '../assets/image/color-sharp2.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -31,6 +32,11 @@ const Projects = () => {
             description: "Served as Project Manager overseeing the construction and commissioning of RO filter production facility in Anaheim, CA",
             imgUrl: projImg2,
         },
+        {
+            title: "EBMUD Water Reuse",
+            description: "Supervised the replacement of RO filters and conducted the commissioning of a key RO system for the East Bay Municipal Utility District",
+            imgUrl: projImg5,
+        },
     ];
 
     const projects3 = [
@@ -52,7 +58,7 @@ const Projects = () => {
                     <Col size={12}>
                         <TrackVisibility>
                             {({ isVisible }) => (
-                                <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
+                                <div className={isVisible ?  'animate__animated animate__' : ''}>
                                     <h2>Projects</h2>
                                     <p>
                                         These are several projects I led or was involved in during my tenure as a sales manager, project manager, and Master's student.

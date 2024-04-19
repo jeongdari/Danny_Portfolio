@@ -307,6 +307,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+.banner1 {
+  padding: 150px 0 200px 0;
+  background-image: url('./assets/image/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center; /* Center align content */
+  width: 100vw; /* Full width of the viewport */
+  margin-left: calc(50% - 50vw); /* Center the element horizontally */
+  margin-right: calc(50% - 50vw); /* Center the element horizontally */
+}
+
+.banner1 h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  width: 80%; /* Set the width to 80% of the parent container */
+  margin: 0 auto; /* Center align within the parent container */
+}
+
+.banner1 p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 80%; /* Adjust width for better readability */
+  margin: 0 auto; /* Center align text within the banner */
+}
+
+.banner1 button {
+  margin-top: 60px;
+}
+
+
 /* Skills CSS */
 .skill {
   padding: 0 0 50px 0;
