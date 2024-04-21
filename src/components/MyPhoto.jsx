@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Metadata from '../components/Metadata';
 import '../App.css';
 
 const MyPhoto = () => {
@@ -28,17 +29,12 @@ const MyPhoto = () => {
       <h2>My Flickr Gallery</h2>
       <div className="photo-grid">
         {photos.map((photo) => (
-          <img
-            key={photo.id}
-            className="photo-item"
-            src={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`}
-            alt={photo.title}
-          />
+          <Metadata key={photo.id} photo={photo} />
         ))}
       </div>
     </div>
-    </section>
-  );
+  </section>
+);
 };
 
 export default MyPhoto;
