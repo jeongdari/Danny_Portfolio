@@ -39,16 +39,16 @@ function Skills () {
                                 <h5>Strategic planning</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="80%" />
-                                <h5>Data Analysis</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="90%" />
-                                <h5>Market Research</h5>
+                                <img src={meter1} alt="95%" />
+                                <h5>Communication</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="95%" />
-                                <h5>Communication</h5>
+                                <h5>Problem Solving</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="90%" />
+                                <h5>Data Analysis</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="80%" />

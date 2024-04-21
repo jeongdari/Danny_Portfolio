@@ -28,7 +28,7 @@ const Projects = () => {
 
     const projects2 = [
         {
-            title: "Construction and commissioning RO production Factory in USA",
+            title: "Commissioning RO production Facility",
             description: "Served as Project Manager overseeing the construction and commissioning of RO filter production facility in Anaheim, CA",
             imgUrl: projImg2,
         },
@@ -41,8 +41,8 @@ const Projects = () => {
 
     const projects3 = [
         {
-            title: "Development of HR Maturity Assessment Platform for Vincents",
-            description: "Developing a user-friendly online platform for Vincents to efficiently assess HR policies and procedures of its clients",
+            title: "Development of HRMAS",
+            description: "Developing a user-friendly online platform, HR Maturity Assessment System for Vincents to efficiently assess HR policies and procedures of its clients",
             imgUrl: projImg4,
         },
     ];

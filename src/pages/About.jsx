@@ -11,8 +11,8 @@ function About() {
     <div>
       <Header />
       <IntroAbout />      
-      <MyMap />
-      <MyPhoto />   
+      <MyPhoto /> 
+      <MyMap />  
       <Footer />
     </div>
   );

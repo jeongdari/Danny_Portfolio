@@ -23,6 +23,7 @@ const MyPhoto = () => {
   }, [apiKey, userId]);
 
   return (
+    <section className="photo" id="photos">
     <div className='my-photo-container'>
       <h2>My Flickr Gallery</h2>
       <div className="photo-grid">
@@ -36,6 +37,7 @@ const MyPhoto = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 
