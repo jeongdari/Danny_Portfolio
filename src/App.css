@@ -682,7 +682,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Footer CSS */
 .footer {
-  padding: 0 0 50px 0;
+  padding: 30px 0;
   background-image: url('./assets/image/footer-bg.png');
   background-position: center center;
   background-size: cover;

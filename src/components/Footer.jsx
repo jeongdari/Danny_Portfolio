@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from 'react-router-dom'; 
 import logo from '../assets/image/logo2.png';
 import navIcon1 from '../assets/image/nav-icon1.svg';
 import navIcon2 from '../assets/image/nav-icon2.svg';
@@ -10,10 +11,10 @@ function Footer() {
     <footer className="footer">
       <Container>
         <Row className="align-item-center">
-          <Col sm={6}>
+          <Col as={Link} to="/home" xs={12} md={6} className="d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
             <img src={logo} alt="Logo" />
           </Col>
-          <Col sm={6} className="text-center text-sm-end">
+          <Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-end">
           <div className='social-icon'>
               <a href="https://www.linkedin.com/in/danny-jeong-brisbane/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn"/> </a>
               <a href="https://www.facebook.com/jeongdari" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="Facebook"/> </a>

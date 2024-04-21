@@ -1,10 +1,9 @@
 import React from 'react';
 import '../App.css';
-import NavBar from '../components/NavBar';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
 import 'react-vertical-timeline-component/style.min.css';
 import IntroResume from '../components/IntroResume';
-import GitHubProfile from '../components/GitHubProfile';
 import { Chrono } from "react-chrono";
 import Data from '../components/Data';
 import Skills from '../components/Skills';
@@ -13,10 +12,9 @@ import Skills from '../components/Skills';
 const Resume = () => {
   return (
     <>
-      <NavBar />
+      <Header />
       <IntroResume />
-      <Skills />
-      <GitHubProfile />
+      <Skills />      
       <div className="ChronoContainer">
       <div className="Chrono">
         <Chrono 

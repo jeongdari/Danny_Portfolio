@@ -1,16 +1,15 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
+import Header from '../components/Header';
 import MyMap from '../components/MyMap';
 import MyPhoto from '../components/MyPhoto';
 import Footer from '../components/Footer';
-
 import IntroAbout from '../components/IntroAbout';
 
 
 function About() {  
   return (
     <div>
-      <NavBar />
+      <Header />
       <IntroAbout />      
       <MyMap />
       <MyPhoto />   

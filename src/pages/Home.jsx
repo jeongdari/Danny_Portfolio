@@ -1,12 +1,12 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Banner from '../components/Banner';
 
 function Home() {
   return (
     <div>
-      <NavBar />
+      <Header />
       <Banner />
       <Footer />      
     </div>
