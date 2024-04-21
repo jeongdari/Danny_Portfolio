@@ -34,7 +34,7 @@ function Banner () {
                             repeat={Infinity}
                         />
                     </h1>
-                        <p>As a technical sales manager and market analyst with more than 16 years of experience, I have honed my skills in strategic planning, data analysis, and market research, which have been instrumental in driving profitability and growth for my clients and employers. However, I have decided to change my career path and pursue a new direction in IT, specifically in the field of Computer Science.</p>
+                        <p style={{ textAlign: 'left' }}>Welcome to my portfolio! With over 16 years of experience as a sales professional and market analyst, I've honed strategic planning, data analysis, and market research—skills that have driven growth and profitability for my clients and employers. Now, I'm embarking on an exciting new journey into the world of IT and Computer Science.</p>
                         <button onClick={() => console.log('connect')}>See my resume <ArrowRightCircle size = {25} /></button>
                         </div>}
                         </TrackVisibility>

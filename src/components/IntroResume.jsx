@@ -32,9 +32,9 @@ function IntroResume () {
                             style={{ whiteSpace: 'nowrap' }}
                         />
                     </h1>
-                        <p>As an experienced sales professional and market analyst with over 16 years of industry experience, I have consistently demonstrated the ability to create value and drive profitability for my clients and employers. My expertise lies in analyzing market information, developing and implementing sales strategies and tactical plans, and identifying and securing new business opportunities.
-                        My strengths include strategic planning, data analysis, market research, and innovative problem-solving. I am a skilled communicator and negotiator, with the ability to build trust and rapport with clients and colleagues alike.
-                        Overall, I am a results-driven sales and marketing professional with a passion for driving growth and profitability for my clients and employers.</p>
+                        <p style={{ textAlign: 'left' }}>Here's a glimpse into my career journey: I spent 14 years at a chemical company in Seoul, Korea, where I gained valuable expertise. Seeking new challenges, I co-founded a consultancy focusing on helping Korean businesses expand into international markets, particularly in India and Southeast Asia. During this venture, I observed a growing demand for IT solutions, which sparked my interest in transitioning to the IT industry.<br></br><br></br>
+To pursue this passion, I enrolled in a Master's program in IT at QUT. I am eager to leverage my diverse experience and skills to thrive in the dynamic field of Information Technology. 
+                        </p>
                         
                         </div>}
                         </TrackVisibility>

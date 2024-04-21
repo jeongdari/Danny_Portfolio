@@ -35,8 +35,8 @@ function IntroAbout() {
                       repeat={Infinity}
                     />
                   </h1>
-                  <p className="text-white">
-                    Thanks to my previous experiences and studies, I have had the privilege of living and working in several countries, including the USA, Japan, India, Indonesia, and Australia. These opportunities have allowed me to explore fascinating places around the world and gain valuable insights into diverse cultures and lifestyles.
+                  <p style={{ textAlign: 'left' }}>
+                    Thanks to my previous experiences and studies, I have had the privilege of living and working in several countries, including the USA, Japan, India, Indonesia, and Australia. These opportunities have allowed me to explore fascinating places around the world and gain valuable insights into diverse cultures and lifestyles. <br></br><br></br>Personally, I have a passion for travel, architecture, and photography. Exploring new places and capturing beautiful scenery through photography is where I find joy. Another passion of mine is scuba diving, which offers a breathtaking glimpse into the mesmerizing underwater world.<br></br><br></br>Outside of my adventures, I enjoy golf as a social activity—a wonderful way to connect with others and build meaningful relationships. During moments of relaxation, you'll find me unwinding with a cup of coffee, a refreshing beer, or a glass of wine.
                   </p>
                 </div>
               )}

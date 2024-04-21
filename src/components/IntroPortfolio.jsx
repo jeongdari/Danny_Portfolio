@@ -32,8 +32,8 @@ function IntroPortfolio () {
                             style={{ whiteSpace: 'nowrap' }}
                         />
                     </h1>
-                        <p>As an experienced sales professional and market analyst with over 16 years of industry experience, I have consistently demonstrated the ability to create value and drive profitability for my clients and employers. My expertise lies in analyzing market information, developing and implementing sales strategies and tactical plans, and identifying and securing new business opportunities.
-                        My strengths include strategic planning, data analysis, market research, and innovative problem-solving. I am a skilled communicator and negotiator, with the ability to build trust and rapport with clients and colleagues alike.
+                        <p style={{ textAlign: 'left' }}>As an experienced sales professional and market analyst with over 16 years of industry experience, I have consistently demonstrated the ability to create value and drive profitability for my clients and employers. My expertise lies in analyzing market information, developing and implementing sales strategies and tactical plans, and identifying and securing new business opportunities.<br></br><br></br>
+                        My strengths include strategic planning, data analysis, market research, and innovative problem-solving. I am a skilled communicator and negotiator, with the ability to build trust and rapport with clients and colleagues alike.<br></br><br></br>
                         Overall, I am a results-driven sales and marketing professional with a passion for driving growth and profitability for my clients and employers.</p>
                         
                         </div>}
