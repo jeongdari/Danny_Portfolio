@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MUIDataTable from 'mui-datatables';
-import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function Repo() {
   const [repositories, setRepositories] = useState([]);
@@ -104,12 +104,12 @@ function Repo() {
                   <h2>GitHub Repositories</h2>
                   <p>
                   Here are some of the projects I've been developing and experimenting with. While these repositories are primarily for practice and ongoing development, they serve as a testament to my evolving skill set. As I continue to add new projects regularly, each contributes to furthering my proficiency and capabilities.
-                  </p>
+                  </p>                  
                   <MUIDataTable
                     data={repositories}
                     columns={columns}
                     options={options}
-                  />
+                  />                  
                 </div>
               )}
 

@@ -13,23 +13,24 @@ function IntroResume () {
                         {({ isVisible }) => 
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                         <h1 className='text-white mb-4 text-4xl lg:text-6xl font-extrabold'>
-                        <span className='text-transparent bg-clip-text bg-gradient-to-r from purple-400 to-pink-600'> <span style={{ color: 'lime' }}>{"</>"}</span> {"I used to be"}{""} </span>
+                        <span className='text-transparent bg-clip-text bg-gradient-to-r from purple-400 to-pink-600'> I used to be </span>
                         <br></br>
                         <TypeAnimation
                             sequence={[
-                                'a General Manager',
+                                '{ a General Manager }',
                                 1000,
-                                'a Sales Manager',
+                                '{ a Sales Manager }',
                                 1000,
-                                'a Project Manager',
+                                '{ a Project Manager }',
                                 1000,
-                                'a Marketing Manager',
+                                '{ a Marketing Manager }',
                                 1000,
                             ]}
                             wrapper='span'
                             speed={50}
                             repeat={Infinity}
                             style={{ whiteSpace: 'nowrap' }}
+                            className="type-animation"
                         />
                     </h1>
                         <p style={{ textAlign: 'left' }}>Here's a glimpse into my career journey: I spent 14 years at a chemical company in Seoul, Korea, where I gained valuable expertise. Seeking new challenges, I co-founded a consultancy focusing on helping Korean businesses expand into international markets, particularly in India and Southeast Asia. During this venture, I observed a growing demand for IT solutions, which sparked my interest in transitioning to the IT industry.<br></br><br></br>

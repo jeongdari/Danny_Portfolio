@@ -14,27 +14,32 @@ const Resume = () => {
     <>
       <Header />
       <IntroResume />
-      <Skills />      
+      <Skills />
+      
       <div className="ChronoContainer">
-      <div className="Chrono">
-        <Chrono 
-          className="ChronoApp"
-          items={Data}
-          mode="VERTICAL"
-          slideShow
-          slideItemDuration={3000}
-          cardHeight={250}
-          cardWidth={600}
-          fontSizes={{
-            title: "1.5rem",
-            cardTitle: "1.4rem",
-            cardSubtitle: "1.2rem",
-            cardDetailedText: "1.1rem"
-          }}
-          contentDetailsHeight={150}
-        />
+        <div className="Chrono">
+        <section className="chrono" id="chrono">
+        <h2>Education & Experience</h2>
+      </section>
+          <Chrono
+            className="ChronoApp"
+            items={Data}
+            mode="VERTICAL"
+            slideShow
+            slideItemDuration={3000}
+            cardHeight={250}
+            cardWidth={600}
+            fontSizes={{
+              title: "1.5rem",
+              cardTitle: "1.4rem",
+              cardSubtitle: "1.2rem",
+              cardDetailedText: "1.1rem"
+            }}
+            contentDetailsHeight={150}
+          />
+        </div>
       </div>
-    </div>
+
       <Footer />
     </>
   );

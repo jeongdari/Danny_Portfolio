@@ -13,23 +13,24 @@ function IntroPortfolio () {
                         {({ isVisible }) => 
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                         <h1 className='text-white mb-4 text-4xl lg:text-6xl font-extrabold'>
-                        <span className='text-transparent bg-clip-text bg-gradient-to-r from purple-400 to-pink-600'> <span style={{ color: 'fuchsia' }}>{"</>"}</span> {"Furthermore, I am"}{""} </span>
+                        <span className='text-transparent bg-clip-text bg-gradient-to-r from purple-400 to-pink-600'> Furthermore, I am </span>
                         <br></br>
                         <TypeAnimation
                             sequence={[
-                                'Result-driven',
+                                '{ Result-driven }',
                                 1000,
-                                'a Negotiator',
+                                '{ a Negotiator }',
                                 1000,
-                                'a Sociable Professional',
+                                '{ a Sociable Professional }',
                                 1000,
-                                'a Business Strategist',
+                                '{ a Business Strategist }',
                                 1000,
                             ]}
                             wrapper='span'
                             speed={50}
                             repeat={Infinity}
                             style={{ whiteSpace: 'nowrap' }}
+                            className="type-animation"
                         />
                     </h1>
                         <p style={{ textAlign: 'left' }}>As an experienced sales professional and market analyst with over 16 years of industry experience, I have consistently demonstrated the ability to create value and drive profitability for my clients and employers. My expertise lies in analyzing market information, developing and implementing sales strategies and tactical plans, and identifying and securing new business opportunities.<br></br><br></br>

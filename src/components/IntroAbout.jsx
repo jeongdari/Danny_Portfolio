@@ -13,26 +13,28 @@ function IntroAbout() {
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h1 className='text-white mb-4 text-4xl lg:text-6xl font-extrabold'>
-                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'><span style={{ color: 'yellow' }}>{"</>"}</span> {"I am also"}{" "}</span>
+                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'> I am also </span>
                     <br />
                     <TypeAnimation
                       sequence={[
-                        'a Pet Lover',
+                        '{ a Pet Lover }',
                         1000,
-                        'a Traveler',
+                        '{ a Traveler }',
                         1000,
-                        'a Landscape Lover',
+                        '{ a Landscape Lover }',
                         1000,
-                        'a Coffee Enthusiast',
+                        '{ a Coffee Enthusiast }',
                         1000,
-                        'a SCUBA Diver',
+                        '{ a SCUBA Diver }',
                         1000,
-                        'a Golfer',
+                        '{ a Golfer }',
                         1000,
                       ]}
                       wrapper='span'
                       speed={50}
                       repeat={Infinity}
+                      style={{ whiteSpace: 'nowrap' }}
+                      className="type-animation"
                     />
                   </h1>
                   <p style={{ textAlign: 'left' }}>

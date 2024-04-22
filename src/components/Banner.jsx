@@ -38,7 +38,8 @@ function Banner() {
                                             ]}
                                             wrapper='span'
                                             speed={50}
-                                            repeat={Infinity}
+                                            repeat={Infinity}                                            
+                                            className="type-animation"
                                         />
                                     </h1>
                                     <p style={{ textAlign: 'left' }}>Welcome to my portfolio! With over 16 years of experience as a sales professional and market analyst, I've honed strategic planning, data analysis, and market research—skills that have driven growth and profitability for my clients and employers. Now, I'm embarking on an exciting new journey into the world of IT and Computer Science.</p>
