@@ -7,15 +7,20 @@ This portfolio website is designed to present my professional profile, projects,
 ## How to Contribute to Development
 Contributions to this project are welcome. To contribute:
 
-Clone the repository:
-bash
+> Clone the repository:
+
+```bash
 Copy code
 git clone https://github.com/jeongdari/IFN666-Portfolio.git
-Install dependencies:
-bash
+```
+
+> Install dependencies:
+
+```bash
 Copy code
-cd portfolio-website
+cd IFN666-Portfolio
 npm install
+```
 Make your changes and create a pull request.
 
 ## Features
