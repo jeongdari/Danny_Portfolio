@@ -10,14 +10,12 @@ Contributions to this project are welcome. To contribute:
 > Clone the repository:
 
 ```bash
-Copy code
 git clone https://github.com/jeongdari/IFN666-Portfolio.git
 ```
 
 > Install dependencies:
 
 ```bash
-Copy code
 cd IFN666-Portfolio
 npm install
 ```
@@ -41,8 +39,6 @@ Make your changes and create a pull request.
 To install dependencies, run:
 
 ```bash
-#!/bin/bash
-
 npm install
 ```
 
