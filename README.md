@@ -10,7 +10,7 @@ Contributions to this project are welcome. To contribute:
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/dannyjeong/portfolio-website.git
+git clone https://github.com/jeongdari/IFN666-Portfolio.git
 Install dependencies:
 bash
 Copy code
@@ -19,11 +19,11 @@ npm install
 Make your changes and create a pull request.
 
 ## Features
-Dynamic Navigation: React Router used for easy navigation between sections.
-Interactive Home Page: Animated hero image with contact button and downloadable resume.
-About Page: Personal interests displayed, including Flickr API integration for photo metadata.
-Resume Page: Skills, education, and work experience showcased with interactive components.
-Portfolio Page: Projects and GitHub repositories displayed using GitHub API and React Datatable.
+- Dynamic Navigation: React Router used for easy navigation between sections.
+- Interactive Home Page: Animated hero image with contact button and downloadable resume.
+- About Page: Personal interests displayed, including Flickr API integration for photo metadata and Google Map API.
+- Resume Page: Skills, education, and work experience showcased with interactive components.
+- Portfolio Page: Projects and GitHub repositories displayed using GitHub API and React Datatable.
 
 ## Dependencies
 1. react: Framework for building user interfaces.
@@ -37,8 +37,9 @@ To install dependencies, run:
 
 ```bash
 #!/bin/bash
-Copy code
+
 npm install
+```
 
 ## Application Architecture
 The application is structured as a React single-page application (SPA) using components for different sections. React Router manages navigation between pages. External APIs like Flickr, GoogleMap and GitHub are integrated for data retrieval. Styling is done using CSS and Bootstrap.
