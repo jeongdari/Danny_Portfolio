@@ -1,8 +1,9 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
-import { TypeAnimation } from 'react-type-animation';
+import TrackVisibility from 'react-on-screen'; //Import to track components visibility
+import { TypeAnimation } from 'react-type-animation'; //Import for text typing animation
 
+// IntroAbout component definition
 function IntroPortfolio () {
     return (
         <section className="banner1" id="Portfolio">
@@ -16,6 +17,7 @@ function IntroPortfolio () {
                         <span className='text-transparent bg-clip-text bg-gradient-to-r from purple-400 to-pink-600'> Furthermore, I am </span>
                         <br></br>
                         <TypeAnimation
+                            // Sequence of text animations
                             sequence={[
                                 '{ Result-driven }',
                                 1000,
@@ -26,10 +28,10 @@ function IntroPortfolio () {
                                 '{ a Business Strategist }',
                                 1000,
                             ]}
-                            wrapper='span'
-                            speed={50}
+                            wrapper='span' // Wrap animation in a span element
+                            speed={50} // Animation speed (characters per second)
                             repeat={Infinity}
-                            style={{ whiteSpace: 'nowrap' }}
+                            style={{ whiteSpace: 'nowrap' }} // Prevent line breaks in animation
                             className="type-animation"
                         />
                     </h1>

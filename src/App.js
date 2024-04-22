@@ -11,8 +11,8 @@ function App() {
   return (    
     
     <div className="App">
-      <BrowserRouter>
-      <Routes>
+      <BrowserRouter> {/* Browser router wrapper for managing routing */}
+      <Routes> {/* Routes component for defining different routes */}
       <Route index element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />

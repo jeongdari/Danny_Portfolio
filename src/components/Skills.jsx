@@ -6,6 +6,7 @@ import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/image/color-sharp.png"
 
 function Skills () {
+  // Responsive configuration for the Carousel component
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -33,6 +34,7 @@ function Skills () {
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
                         <p> I have honed my skills in strategic planning, data analysis, and market research, <br></br>which have been instrumental in driving profitability and growth for my clients and employers.</p>
+                        {/* Carousel component to display skills with responsive configuration */}
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="95%" />

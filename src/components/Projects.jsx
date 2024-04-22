@@ -6,13 +6,16 @@ import projImg2 from '../assets/image/project-img2.jpeg';
 import projImg3 from '../assets/image/project-img3.png';
 import projImg4 from '../assets/image/project-img4.png';
 import projImg5 from '../assets/image/project-img5.png';
-import colorSharp2 from '../assets/image/color-sharp2.png';
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import colorSharp2 from '../assets/image/color-sharp2.png'; // Background image
+import 'animate.css'; // Import for animations
 
+import TrackVisibility from 'react-on-screen'; // Import for handling animations
+
+// Projects component definition
 const Projects = () => {
     const [activeTab, setActiveTab] = useState('first');
 
+    // Project data grouped by tabs
     const projects1 = [
         {
             title: "Established Sales Network in India",
@@ -47,6 +50,7 @@ const Projects = () => {
         },
     ];
 
+    // Function to handle tab selection
     const handleTabSelect = (eventKey) => {
         setActiveTab(eventKey);
     };
@@ -56,6 +60,7 @@ const Projects = () => {
             <Container>
                 <Row>
                     <Col size={12}>
+                        {/* TrackVisibility component for handling animations */}
                         <TrackVisibility>
                             {({ isVisible }) => (
                                 <div className={isVisible ?  'animate__animated animate__' : ''}>
@@ -63,6 +68,7 @@ const Projects = () => {
                                     <p>
                                         These are several projects I led or was involved in during my tenure as a sales manager, project manager, and Master's student.
                                     </p>
+                                    {/* Tab.Container for organizing project tabs */}
                                     <Tab.Container id="projects-tabs" activeKey={activeTab} onSelect={handleTabSelect}>
                                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                             <Nav.Item>

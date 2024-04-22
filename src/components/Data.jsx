@@ -1,10 +1,11 @@
+// Data array containing detailed information about work and education experiences
 const Data = [
   {
-    title: "2023 - Present",
-    cardTitle: "Master of Information Technology Student",
-    url: "https://www.qut.edu.au/courses/master-of-information-technology",
+    title: "2023 - Present", // Duration of the experience
+    cardTitle: "Master of Information Technology Student", // Title of the position or education
+    url: "https://www.qut.edu.au/courses/master-of-information-technology", // URL for more information (optional)
     cardSubtitle:
-      "Queensland University of Technology",
+      "Queensland University of Technology", // Companies or institution
     cardDetailedText: `Received the International Merit Scholarship for demonstrating academic excellence Have completed 96 out of 192 units with an impressive overall average GPA of 6.5 out of 7.0 Expect to graduate in December 2024`
   },
   {

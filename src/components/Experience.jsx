@@ -1,8 +1,9 @@
 import React from 'react';
 import '../App.css';
 import { Chrono } from "react-chrono";
-import Data from '../components/Data';
+import Data from '../components/Data'; // Importing data containing education and experience details
 
+// Functional component for displaying education and experience timeline
 const Experience = () => {
   return (
     <>     
@@ -13,10 +14,10 @@ const Experience = () => {
       </section>
           <Chrono
             className="ChronoApp"
-            items={Data}
-            mode="VERTICAL"
-            slideShow
-            slideItemDuration={3000}
+            items={Data} // Data array containing timeline items
+            mode="VERTICAL" // Display mode of the timeline
+            slideShow // Enable slideshow mode
+            slideItemDuration={3000} // Slideshow duration per item (3 seconds)
             cardHeight={250}
             cardWidth={600}
             fontSizes={{

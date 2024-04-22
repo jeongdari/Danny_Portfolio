@@ -1,18 +1,21 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/image/header-img.png';
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
-import { TypeAnimation } from 'react-type-animation';
-import DownloadFile from '../components/DownloadFile';
+import 'animate.css'; // Import for animations
+import TrackVisibility from 'react-on-screen'; //Import to track components visibility
+import { TypeAnimation } from 'react-type-animation'; //Import for text typing animation
+import DownloadFile from '../components/DownloadFile'; 
 
+//Banner component definition
 function Banner() {
-    const handleDownloadResume = () => {
+    // Function to handle resume download
+    const DownloadResume = () => {
         const resumeUrl = '../public/Resume_Danny Jeong.pdf';
         const fileName = 'Resume_Danny Jeong.pdf';
         DownloadFile(resumeUrl, fileName); // Call the downloadFile utility function
     };
 
+    // Rendering the banner section
     return (
         <section className="banner" id="home">
             <Container>
@@ -43,7 +46,7 @@ function Banner() {
                                         />
                                     </h1>
                                     <p style={{ textAlign: 'left' }}>Welcome to my portfolio! With over 16 years of experience as a sales professional and market analyst, I've honed strategic planning, data analysis, and market research—skills that have driven growth and profitability for my clients and employers. Now, I'm embarking on an exciting new journey into the world of IT and Computer Science.</p>
-                                    <button onClick={handleDownloadResume}>
+                                    <button onClick={DownloadResume}>
                                         Download my resume <ArrowRightCircle size={25} />
                                     </button>
                                 </div>}

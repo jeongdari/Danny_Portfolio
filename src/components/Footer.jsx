@@ -2,10 +2,11 @@ import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom'; 
 import logo from '../assets/image/logo2.png';
-import navIcon1 from '../assets/image/nav-icon1.svg';
+import navIcon1 from '../assets/image/nav-icon1.svg';  // Importing social media icon images
 import navIcon2 from '../assets/image/nav-icon2.svg';
 import navIcon3 from '../assets/image/nav-icon3.svg';
 
+// Footer component definition
 function Footer() {
   return (
     <footer className="footer">
@@ -14,6 +15,7 @@ function Footer() {
           <Col as={Link} to="/home" xs={12} md={6} className="d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
             <img src={logo} alt="Logo" />
           </Col>
+          {/* Social media icons column */}
           <Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-end">
           <div className='social-icon'>
               <a href="https://www.linkedin.com/in/danny-jeong-brisbane/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn"/> </a>
