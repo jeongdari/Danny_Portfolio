@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Portfolio Website
+Welcome to my portfolio website! This project serves as an assignment for IFN666, showcasing my skills and projects.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Purpose of the Application
+This portfolio website is designed to present my professional profile, projects, and interests to visitors. It features multiple pages including a landing page (Home), an About page, a Resume page, and a Portfolio page.
 
-## Available Scripts
+## How to Contribute to Development
+Contributions to this project are welcome. To contribute:
 
-In the project directory, you can run:
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/dannyjeong/portfolio-website.git
+Install dependencies:
+bash
+Copy code
+cd portfolio-website
+npm install
+Make your changes and create a pull request.
 
-### `npm start`
+## Features
+Dynamic Navigation: React Router used for easy navigation between sections.
+Interactive Home Page: Animated hero image with contact button and downloadable resume.
+About Page: Personal interests displayed, including Flickr API integration for photo metadata.
+Resume Page: Skills, education, and work experience showcased with interactive components.
+Portfolio Page: Projects and GitHub repositories displayed using GitHub API and React Datatable.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Dependencies
+1. react: Framework for building user interfaces.
+2. react-router-dom: React library for declarative routing.
+3. bootstrap: Front-end CSS framework for styling.
+4. react-bootstrap: React components for Bootstrap.
+5. @mui/material, @mui/icons-material: Material-UI components for popover, carousel, datatable, etc.
+6. react-datatable: React library for displaying data tables.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To install dependencies, run:
 
-### `npm test`
+```bash
+#!/bin/bash
+Copy code
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Application Architecture
+The application is structured as a React single-page application (SPA) using components for different sections. React Router manages navigation between pages. External APIs like Flickr, GoogleMap and GitHub are integrated for data retrieval. Styling is done using CSS and Bootstrap.
 
-### `npm run build`
+## How to Report Issues
+If you encounter any issues or have suggestions, please report them on the GitHub repository's issue tracker:
+Link to Issue Tracker
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Environment Variables
+Sensitive information such as API keys and tokens are stored securely in an .env.local file, which is excluded from version control using .gitignore.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License. Feel free to use, modify, and distribute this code for personal or commercial projects.
