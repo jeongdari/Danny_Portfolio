@@ -10,7 +10,7 @@ Contributions to this project are welcome. To contribute:
 > Clone the repository:
 
 ```bash
-git clone [https://github.com/jeongdari/Danny_Portfolio.git](https://github.com/jeongdari/Danny_Portfolio.git)
+git clone https://github.com/jeongdari/Danny_Portfolio.git
 ```
 
 > Install dependencies:
@@ -47,7 +47,7 @@ The application is structured as a React single-page application (SPA) using com
 
 ## How to Report Issues
 If you encounter any issues or have suggestions, please report them on the GitHub repository's issue tracker:
-Link to Issue Tracker
+[Link to Issue Tracker] (https://github.com/jeongdari/Danny_Portfolio/issues)
 
 ## Environment Variables
 Sensitive information such as API keys and tokens are stored securely in an .env.local file, which is excluded from version control using .gitignore.
