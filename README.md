@@ -10,13 +10,13 @@ Contributions to this project are welcome. To contribute:
 > Clone the repository:
 
 ```bash
-git clone https://github.com/jeongdari/IFN666-Portfolio.git
+git clone [https://github.com/jeongdari/Danny_Portfolio.git](https://github.com/jeongdari/Danny_Portfolio.git)
 ```
 
 > Install dependencies:
 
 ```bash
-cd IFN666-Portfolio
+cd Danny_Portfolio
 npm install
 ```
 Make your changes and create a pull request.
