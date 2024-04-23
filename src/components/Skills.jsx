@@ -32,7 +32,7 @@ function Skills () {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
+                        <h2>SKILLS</h2>
                         <p> I have honed my skills in strategic planning, data analysis, and market research, <br></br>which have been instrumental in driving profitability and growth for my clients and employers.</p>
                         {/* Carousel component to display skills with responsive configuration */}
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">

@@ -104,7 +104,7 @@ function Repo() {
                 <p>Loading GitHub Repo data...</p> // Display loading message while data is being fetched
               ) : (
                 <div>
-                  <h2>GitHub Repositories</h2>
+                  <h2>GitHub REPOSITORIES</h2>
                   <p>
                     Here are some of the projects I've been developing and experimenting with. While these repositories are primarily for practice and ongoing development, they serve as a testament to my evolving skill set. As I continue to add new projects regularly, each contributes to furthering my proficiency and capabilities.
                   </p>

@@ -31,7 +31,7 @@ const MyPhoto = () => {
   return (
     <section className="photo" id="photos">
     <div className='my-photo-container'>
-      <h2>My Flickr Gallery</h2>
+      <h2>MY PHOTO GALLERY</h2>
       <div className="photo-grid">
         {/* Mapping over 'photos' array and rendering Metadata component for each photo */}
         {photos.map((photo) => (

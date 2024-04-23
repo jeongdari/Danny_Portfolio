@@ -678,6 +678,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .Chrono {
   width: 90%;
   height: 80vh;
+  margin-bottom: 55px;  
 }
 
 .ChronoApp {

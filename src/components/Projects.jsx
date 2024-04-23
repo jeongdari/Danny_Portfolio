@@ -64,7 +64,7 @@ const Projects = () => {
                         <TrackVisibility>
                             {({ isVisible }) => (
                                 <div className={isVisible ?  'animate__animated animate__' : ''}>
-                                    <h2>Projects</h2>
+                                    <h2>PROJECTS</h2>
                                     <p>
                                         These are several projects I led or was involved in during my tenure as a sales manager, project manager, and Master's student.
                                     </p>

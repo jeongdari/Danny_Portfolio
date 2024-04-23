@@ -10,7 +10,7 @@ const Experience = () => {
       <div className="ChronoContainer">
         <div className="Chrono">
         <section className="chrono" id="chrono">
-        <h2>Education & Experience</h2>
+        <h2>EDUCATION & EXPERIENCE</h2>
       </section>
           <Chrono
             className="ChronoApp"
