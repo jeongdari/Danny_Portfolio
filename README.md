@@ -2,7 +2,7 @@
 Welcome to my portfolio website! This project serves as an assignment for IFN666, showcasing my skills and projects.
 
 ## Purpose of the Application
-This portfolio website is designed to present my professional profile, projects, and interests to visitors. It features multiple pages including a landing page (Home), an About page, a Resume page, and a Portfolio page.
+This portfolio website is designed to present my professional profile, projects, and interests to visitors. It features multiple pages including a landing page `Home`, an `About` page, a `Resume` page, and a `Portfolio` page.
 
 ## How to Contribute to Development
 Contributions to this project are welcome. To contribute:
@@ -50,7 +50,7 @@ If you encounter any issues or have suggestions, please report them on the GitHu
 [Link to Issue Tracker](https://github.com/jeongdari/Danny_Portfolio/issues)
 
 ## Environment Variables
-Sensitive information such as API keys and tokens are stored securely in an .env.local file, which is excluded from version control using .gitignore.
+Sensitive information such as API keys and tokens are stored securely in an `.env.local` file, which is excluded from version control using `.gitignore`.
 
 ## License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute this code for personal or commercial projects.
