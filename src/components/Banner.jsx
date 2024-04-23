@@ -10,7 +10,7 @@ import DownloadFile from '../components/DownloadFile';
 function Banner() {
     // Function to handle resume download
     const DownloadResume = () => {
-        const resumeUrl = '../public/Resume_Danny Jeong.pdf';
+        const resumeUrl = `${process.env.PUBLIC_URL}/Resume_Danny Jeong.pdf`;
         const fileName = 'Resume_Danny Jeong.pdf';
         DownloadFile(resumeUrl, fileName); // Call the downloadFile utility function
     };
