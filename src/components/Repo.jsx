@@ -89,9 +89,6 @@ function Repo() {
   // Options configuration for MUI DataTable
   const options = {
     filterType: 'checkbox',
-    tableBodyStyles: {
-      backgroundColor: '#f5f5f5',
-    }
   };
 
   return (
